@@ -1,7 +1,13 @@
 <template>
-	<lightning-card title="Lightning Web Component" icon-name="custom:custom14">
-		<div class="slds-var-m-around_medium">
-			<h2>Hello World!</h2>
-		</div>
-	</lightning-card>
-</template>
+	<lightning-accordion active-section-name="B">
+	  <lightning-accordion-section name="A" label="Accordion Title A">
+		 <lightning-button-menu slot="actions" alternative-text="Show menu" menu-alignment="right" >
+				 <lightning-menu-item value="New" label="Menu Item One"></lightning-menu-item>
+				 <lightning-menu-item value="Edit" label="Menu Item Two"></lightning-menu-item>
+		 </lightning-button-menu>
+		 <p>This is the content area for section A.</p>
+	  </lightning-accordion-section>
+	  <lightning-accordion-section name="B" label="Accordion Title B">This is the content area for section B</lightning-accordion-section>
+	  <lightning-accordion-section name="C" label="Accordion Title C">This is the content area for section C</lightning-accordion-section>
+	</lightning-accordion>
+ </template>
